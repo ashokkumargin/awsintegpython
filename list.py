@@ -9,7 +9,7 @@ databaseExists = False
 
 def list(event, context):
 	db_connection = mysqlconnection.MysqlConnection().getConnection()
-	#print(db_connection)
+	
 	mycursor = db_connection.cursor()
 	# mycursor = db_connection.cursor(buffered=True)
 	# mycursor.execute("SHOW DATABASES")
